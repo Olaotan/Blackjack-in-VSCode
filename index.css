@@ -5,6 +5,7 @@ body {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    text-shadow: 2px 2px 5px black;
 }
 
 h1 {

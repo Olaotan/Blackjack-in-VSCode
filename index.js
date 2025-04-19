@@ -11,7 +11,7 @@ let extraCard = Math.floor(Math.random()*11) +1
 let sum = firstCard + secondCard
 let isAlive = true
 let hasBlackjack = false
-
+let message = ''
 
 startBtn.addEventListener('click', function(){
     newGameCard()
@@ -34,12 +34,12 @@ function extraCard(){
 function cardLogic(){
 
     if (sum < 21) {
-        heading.textContent = "Pick a new card"
+        message = "Pick a new card"
     } else if (sum > 21) {
-        heading.textContent = "Game Over"
+        message = "Game Over"
         isAlive = false
     } else {
-        heading.textContent = "You've got Blackjack!"
+        message = "You've got Blackjack!"
         hasBlackjack = false
     }
 
