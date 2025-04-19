@@ -7,12 +7,24 @@ const newCardBtn = document.getElementById("new-btn")
 const heading = document.getElementById("heading")
 let firstCard = Math.floor(Math.random()*11) +1
 let secondCard = Math.floor(Math.random()*11) +1
+let extraCard = Math.floor(Math.random()*11) +1
 let sum = firstCard + secondCard
 
+
 startBtn.addEventListener('click', function(){
-    cardsEl.textContent = "Cards: " + firstCard + ' ' + secondCard
-    sumEl.textContent = "Sum: " + sum
 })
+
+
+function newGameCard(){    
+    cardsEl.textContent += firstCard + ' ' + secondCard
+    sumEl.textContent = "Sum: " + sum
+}
+
+function extraCard(){
+    cardsEl.textContent += extraCard
+    sumEl.textContent = "Sum: " + sum
+
+}
 
 function cardLogic(){
 
